@@ -8,18 +8,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 	<body>
-
+		<div class="keepFooterOnBottom">
 		<header>P L A N T I F Y <img src="plantify.png" class="image" alt="logo"/>
 		</header>
-			<nav>
-				<ul>
-					<li><h1><a href="index.html">Home</a></h1></li>
-					<li><h1><a href="pricing.html">Pricing</a></h1></li>
-					<li><h1><a href="plant.html">Plant theme</a></h1></li>
-					<li><h1><a href="about.html">About us</a></h1></li>
-					<li><h1><a href="contact.html">Contact</a></h1></li>
-				</ul>
-			</nav>
+		<nav>
+			<ul>
+				<li><h1><a href="index.html">Home</a></h1></li>
+				<li><h1><a href="pricing.html">Pricing</a></h1></li>
+				<li><h1><a href="plant.html">Plant theme</a></h1></li>
+				<li><h1><a href="about.html">About us</a></h1></li>
+				<li><h1><a href="contact.html">Contact</a></h1></li>
+			</ul>
+		</nav>
 		<section class="container">
 			<article class="item2">
 				<h1>Plant themes</h1>
@@ -38,12 +38,16 @@
 						<td>This rich theme includes exotic coconuts spilling all over the floor combined with palm trees that hang down and are always in the way of your workflow. This theme is very complicated, suitable for complex startups.</td>
 						<td>Dead plants everywhere. Plants sprayed with white color to give that cold secluded look. Is your startups policy very coldhearted? This is the setting for you!</td>
 						<td>A shitload of pine and spruce. Get that Norrlands inland-look in your office. Comes with a Christmas Decoration Extension Pack for the first 100 subscribers. (Bears not included).</td>
-				<!-- class="imageTd" -->
 					</tr>
 				</table>
 			</article>
-			<footer><img src="plantify.png" class="footerImg" alt="logo"/></footer>
 		</section>
+<!-- var tvungen göra om footer till en div på två sidor för att få ner footer till botten 
+det fungerade inte att ha  position:absolute; på footer -->
+		<div class="footerBottom">
+			<p class="footerImg">Plantify &#169; 2016<img src="plantify.png" class="footerImg" alt="logo"/></p>
+		</div>
+		</div>
 	</body>
 </html>
 

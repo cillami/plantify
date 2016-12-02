@@ -5,10 +5,10 @@ html {
     min-height: 100%;
 }
 
+/*specificitet 1 + 1*/
 html, body{
 	height: 100%;
 }
-
 
 body
 {
@@ -18,29 +18,32 @@ body
 	width:100%;
 	min-height: 100%;
 	overflow: auto;
+
 }
 
-/*specifitet 10*/
+/*specificitet 10*/
+
+/*plantify-logo innuti header, används på alla sidor*/
 .image{
 	height:100%;
 
 }
+
+/*plantify-logo som används i footer, används på alla sidor*/
 .footerImg{
-	height: 100%;
-float: right;
+	height: 60%;
 }
+
+/*storlek på bilderna på plant themes-sidan*/
 .plants{
 	height:35%;
 }
 
-
-/*”Helvetica Neue”, ”Arial”, sans-serif;*/
-
-/*specifitet 1*/
-header{
+/*specificitet 1*/
+header {
 	width:100%;
     color: white;
-  	height: 80px;
+    height: 5rem;
   	background-color: teal;
   	font-size: 2.5em; 
   	display: flex;
@@ -49,15 +52,13 @@ header{
   	padding-left: 2rem;
 
 }
+
 nav{
 	width:100%;
 	display: table;
-/*	padding: 1em;*/
 	background-color: black;
 	color:white;
 	margin:0 auto;
-/*	padding-left:2em;*/
-
 }
 
 h1{
@@ -68,14 +69,9 @@ h2{
 }
 
 nav ul {
-
-/*	width:100%;*/
     padding-left: 2em;
-
     display: flex;
     list-style: none;
-/*  	align-items: left;*/
-/*  	justify-content: left;*/
   	margin:0 auto;
 }
 
@@ -85,6 +81,8 @@ nav ul li{
 	text-align: center;
 }
 
+/*specificitet 1 + 1*/
+/*för att förändra länkarna i header beroende på hover, aktiva eller om de är besökta eller inte*/
 a:link{
 	color:white;
 	text-decoration: none;
@@ -102,26 +100,13 @@ a:active{
 	color:white;
 }
 
-footer {
-	width:100%;
-    padding: 0 0 0 2em;
-    color: white;
-    height: 80px;
-    background-color: black;
-    position:absolute;
-   	top: 100%;
-   	margin-top: 1em;
-
-/* display: flex;
-  align-items: center;
-  justify-content: left;*/
-
-}
-
+/*specificitet 0 */
+/*få till samma storlek på boxar*/
 *{
 	box-sizing: border-box;
 }
 
+/*section som finns på varje sida, innehåller articles som är centrerade*/
 .container{
 	padding:2em;
 	width:100%;
@@ -135,83 +120,116 @@ footer {
 	min-height: 100%;
 }
 
-
+/*rubriker i article har en speciell färg*/
 article h1{
 	color:#E65F68;
 	font: 1.5em/1.1 "Playfair Display", serif;
 }
 
-
-.item{
-	width: 60%;
-	height: 0 auto;
-	height: 100%;
-	background-color: white;
-	padding: 1em;
-	margin:0 1em 0 0 ;
-}
-.item1{
-	width: 20%;
-	height: 0 auto;
-	height: 100%;
-	background-color: white;
-	padding: 1em;
-	margin:0 1em 0 0 ;
-
-}
-.item1 p{
-	margin-bottom: 4em;
-	height: 100%
-}
+/*article innuti section finns på alla sidor*/
 .item2{
-
 	width: 60%;
 	height: 100%;
- 
 	background-color: white;
 	padding: 1em;
-	margin:0 0 4em 1em;
-/*	border: 1px solid black;*/
+	margin:0 0 1em 1em;
 }
-
-/*.item1 .oneArticle{
-	align-items: center;
-  	justify-content: center;
-}*/
-
+.pricing{
+	width:90%;
+}
+/*tabell som finns på två sidor*/
 table{
 	border-collapse: collapse;
 	width:85%;
 	height: 100%;
-	margin-bottom: 4em;
 }
+
+/*specificitet 1 + 1 + 1*/
 table, tr, td{
-	/*border: 1px solid black;*/
+
 	padding: 1em 1em 1em 0;
 	vertical-align: top;
-    /*text-align: left;*/
     border-bottom: 1px solid #ddd;
 }
 table th{
 	text-align: left;
 }
 
+/*form-element för contact-sidan
+textareans border får rundade kanter etc*/
 textarea {
     width: 100%;
-    height: 150px;
-    padding: 0.5em 0.5em;
+    height: 12em;
+    padding: 0.8em 0.5em;
     box-sizing: border-box;
-    border: 1px solid black;
-	font: 0.8em/1.5 "Alice", serif;
+    border: 1px solid #ccc;
 	color: grey;
-    border-radius: 4px;
-    font-style: italic;
+    border-radius: 0.25em;
     resize: none;
 }
-.pricing{
-	width:90%;
+
+/*utseende på inputfält*/
+input{
+    width: 100%;
+    padding: 0.8em 0.5em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+
+}
+/*submit-knappen stylas*/
+input[type=submit] {
+    width: 20%;
+    background-color: teal;
+    color: white;
+    padding: 0.8em 0.5em;
+    border: none;
+    border-radius: 0.25em;
 }
 
+/* specificitet 1 + 10 + 1*/
+/*jag är osäker på hur det här ränkas?*/
+input[type=submit]:hover {
+    background-color: #5BB2A2;
+}
 
+/*detta centrerar footerImg vertikalt i förhållande till texten*/
+footer p{
+	display: flex;
+	align-items: center;
+}
 
+footer {
+	width:100%;
+    padding: 0 2em 0 2em;
+    color: white;
+    height: 5em;
+    background-color: teal;
+    position:absolute;
+   	top: 100%;
+   	margin-top: 1em;
+   	font-size: 1em; 
+}
+
+/*detta centrerar footerImg vertikalt i förhållande till texten*/
+.footerBottom p{
+	display: flex;
+	align-items: center;
+
+}
+
+.footerBottom{
+	width:100%;
+    padding: 0 2em 0 2em;
+    color: white;
+    height: 5em;
+    background-color: teal;
+   	margin-top: 1em;
+   	font-size: 1em; 
+  	padding-right: 2rem;
+	display: flex;
+	align-items: center;
+}
  
