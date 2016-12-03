@@ -93,12 +93,16 @@ a:visited{
 }
 
 a:hover{
-	color:teal;
+
+	color:white;
+
+}
+ul .active a{
+	color:#E65F68;
 	text-decoration: underline;
 }
-a:active{
-	color:white;
-}
+
+ 
 
 /*specificitet 0 */
 /*få till samma storlek på boxar*/
