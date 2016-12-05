@@ -14,7 +14,7 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	font: 16px/1.5 "Alice", serif;
+	font: 16px/1.5 "Alice", times, serif;
 	width:100%;
 	min-height: 100%;
 	overflow: auto;
@@ -62,10 +62,10 @@ nav{
 }
 
 h1{
-	font: 1.5em/1.1 "Playfair Display", serif;
+	font: 1.5em/1.1 "Playfair Display", times, serif;
 }
 h2{
-	font: 1.2em/1.1 "Playfair Display", serif;
+	font: 1.2em/1.1 "Playfair Display", times, serif;
 }
 
 nav ul {
@@ -235,4 +235,13 @@ footer {
 	display: flex;
 	align-items: center;
 }
+
+@media screen and (min-width: 50em){
+	header{
+font-size: 1em;
+		} 
+
+	
+
+	}
  
