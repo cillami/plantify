@@ -223,7 +223,7 @@ footer {
 }
 
 /*
-.footerOnTheBottom{
+.keepFooterOnBottom{
 	padding:2em;
 	width:100%;
 	min-height: 100%
@@ -264,7 +264,5 @@ footer {
 	padding: 1em;
 	margin:0 0 1em 1em;
 }
-
-
 	}
  
