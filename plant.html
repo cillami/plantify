@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Plantify</title>
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
@@ -30,9 +31,35 @@
 						<th>Exotique Nordic</th>
 					</tr>
 					<tr>
-						<td><img src="aloha.png" class="plants" alt="Palm plants"/></td>
-						<td><img src="siberia.png" class="plants" alt="White plant"/></td>
-						<td><img src="nordic.png" class="plants" alt="Pine tree plant"/></td>
+						<td>
+<!-- 						större än -->
+
+						<img sizes="(max-width: 50em) 25vw, 15vw"
+
+							srcset="
+							img/aloha25x.jpg 125w,
+							img/aloha5x.jpg 250w,
+							img/aloha.jpg 500w"
+							src="img/aloha.jpg">
+						</td>
+						<td>
+							<img sizes="(max-width: 50em) 25vw, 15vw"
+							srcset="
+							img/siberia25x.jpg 125w,
+							img/siberia5x.jpg 250w,
+							img/siberia.jpg 500w"
+							src="img/siberia.jpg">
+						</td>
+
+						<td>
+							<img sizes="(max-width: 50em) 25vw, 15vw"
+							srcset="
+							img/nordic25x.jpg 125w,
+							img/nordic5x.jpg 250w,
+							img/nordic.jpg 500w"
+							src="img/nordic.jpg">
+						</td>
+
 					</tr>
 					<tr>
 						<td>This rich theme includes exotic coconuts spilling all over the floor combined with palm trees that hang down and are always in the way of your workflow. This theme is very complicated, suitable for complex startups.</td>

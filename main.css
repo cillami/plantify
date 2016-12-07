@@ -35,9 +35,9 @@ body
 }
 
 /*storlek på bilderna på plant themes-sidan*/
-.plants{
+/*.plants{
 	height:35%;
-}
+}*/
 
 /*specificitet 1*/
 header {
@@ -219,11 +219,10 @@ footer {
 .footerBottom p{
 	display: flex;
 	align-items: center;
-
 }
 
-/*
-.keepFooterOnBottom{
+
+/*.keepFooterOnBottom{
 	padding:2em;
 	width:100%;
 	min-height: 100%
@@ -258,11 +257,16 @@ footer {
 	font: 0.8em/1.1 "Playfair Display", times, serif;
 }
 .item2{
-	width: 100%;
+	width: 70%;
 	height: 100%;
 	background-color: white;
 	padding: 1em;
 	margin:0 0 1em 1em;
+}
+table{
+ 
+	width:100%;
+ 
 }
 	}
  
